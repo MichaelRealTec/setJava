@@ -17,8 +17,10 @@ public class Program {
 		set.add("Tablet"); // Observação troquei a ordem e o resultado mudou
 		set.add("Notebook");
 		
-		set.remove("Tablet"); // Observação: Nome tem que ser igual para remover
-
+		// set.remove("Tablet"); // Observação: Nome tem que ser igual para remover
+		// set.removeIf(x -> x.length() >= 3); // Remove todos que tem mais de 3 caracter
+		set.removeIf(x -> x.charAt(0) == 'T'); // Remover todos que começam com a letra T
+		
 		
 		System.out.println(set.contains("Notebook"));
 		
