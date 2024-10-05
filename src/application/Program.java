@@ -11,8 +11,9 @@ public class Program {
 		Set<String> set = new HashSet<>();
 		
 		set.add("TV");
+		set.add("Tablet"); // Observação troquei a ordem e o resultado mudou
 		set.add("Notebook");
-		set.add("Tablet");
+
 		
 		System.out.println(set.contains("Notebook"));
 		
